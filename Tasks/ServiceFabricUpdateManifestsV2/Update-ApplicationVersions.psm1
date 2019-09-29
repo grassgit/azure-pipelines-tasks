@@ -50,6 +50,19 @@
                 Write-Warning (Get-VstsLocString -Key VstsRestApiFailed -ArgumentList $_)
                 $oldDropLocation = $null
             }
+            
+            if ((dir $oldDropLocation | measure).Count -eq 1) {
+                $zip = [System.IO.Directory]::GetFiles($oldDropLocation, "*.zip")
+                if ($zip.Length -eq 1) {
+                    $filename = [System.IO.Path]::GetFileName($zip[0])
+                    Write-Host (Get-VstsLocString -Key ArtifactZip -ArgumentList $filename)
+
+                    Add-Type -assembly "system.io.compression.filesystem"
+                    #$expand = Join-Path $oldDropLocation expand
+                    [io.compression.zipfile]::ExtractToDirectory($zip[0], $oldDropLocation)
+                    [System.IO.File]::Delete($zip[0])
+                }
+            }
 
             if ($oldDropLocation -and (Test-Path -LiteralPath $oldDropLocation))
             {

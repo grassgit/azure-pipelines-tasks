@@ -39,6 +39,9 @@ describe('ServiceFabricUpdateManifests Suite', function () {
         it('(Update-ApplicationVersions) service changed', (done) => {
             psr.run(path.join(__dirname, 'Update-ApplicationVersions.ServiceChanged.ps1'), done);
         })
+        it('(Update-ApplicationVersions) service changed zipped', (done) => {
+            psr.run(path.join(__dirname, 'Update-ApplicationVersions.ServiceChanged.Zipped.ps1'), done);
+        })
         it('(Update-ApplicationVersions) service changed (package in sub path)', (done) => {
             psr.run(path.join(__dirname, 'Update-ApplicationVersions.ServiceChanged.SubPath.ps1'), done);
         })
