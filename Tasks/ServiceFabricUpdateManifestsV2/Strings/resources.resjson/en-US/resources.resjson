@@ -1,5 +1,5 @@
 {
-  "loc.friendlyName": "Update Service Fabric manifests",
+  "loc.friendlyName": "Update Service Fabric manifests Zipped",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkId=820529)",
   "loc.description": "Automatically update portions of application and service manifests in a packaged Azure Service Fabric application",
   "loc.instanceNameFormat": "Update Service Fabric Manifests ($(updateType))",
@@ -67,5 +67,6 @@
   "loc.messages.ImageDigestListMismatch": "The list of image names and the list of digests must be the same length. Number of image names: '{0}', number of image digests: '{1}'.",
   "loc.messages.AmbiguousImages": "The repository '{0}' has more than one digest. You must provide a path to the list of the original images names in the input \"Image Names Path\" to disambiguate.",
   "loc.messages.ImageDigestNameMismatch": "The digest '{0}' does not match the image '{1}'.",
-  "loc.messages.NoDigestForImage": "No digest found for image '{0}'."
+  "loc.messages.NoDigestForImage": "No digest found for image '{0}'.",
+  "loc.messages.ArtifactZip": "Found single zip file '{0}' in artifact; expanding."
 }

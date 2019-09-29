@@ -1,9 +1,9 @@
 {
-  "id": "97EF6E59-B8CC-48AA-9937-1A01E35E7584",
-  "name": "ServiceFabricUpdateManifests",
+  "id": "db7213be-94e8-47bd-8582-4a41401ae21d",
+  "name": "ServiceFabricUpdateManifestsZipped",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
-  "author": "Microsoft Corporation",
+  "author": "Patrick Verbeeten",
   "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/service-fabric-versioning",
   "helpMarkDown": "ms-resource:loc.helpMarkDown",
   "category": "Utility",
@@ -20,7 +20,7 @@
   "version": {
     "Major": 2,
     "Minor": 5,
-    "Patch": 0
+    "Patch": 2
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
@@ -190,6 +190,7 @@
     "ImageDigestListMismatch": "ms-resource:loc.messages.ImageDigestListMismatch",
     "AmbiguousImages": "ms-resource:loc.messages.AmbiguousImages",
     "ImageDigestNameMismatch": "ms-resource:loc.messages.ImageDigestNameMismatch",
-    "NoDigestForImage": "ms-resource:loc.messages.NoDigestForImage"
+    "NoDigestForImage": "ms-resource:loc.messages.NoDigestForImage",
+    "ArtifactZip": "ms-resource:loc.messages.ArtifactZip"
   }
 }

@@ -1,0 +1,11 @@
+Based of version 2.5
+task.json is modified to allow side by side use
+
+Build:
+node make.js build --task ServiceFabricUpdateManifestsV2
+
+Test:
+node make.js test --task ServiceFabricUpdateManifestsV2
+
+Upload 
+tfx build tasks upload --service-url https://dev.azure.com/<Organization> -t <Personal Access Token> --task-path ....\azure-pipelines-tasks\_build\Tasks\ServiceFabricUpdateManifestsV2
